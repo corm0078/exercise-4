@@ -1,0 +1,20 @@
+@mixin round{
+  width: 10px;
+  height: 10px;
+  border-radius:300px;
+  position:absolute;
+  background-color: #fff;
+  top:0;left: 0;right: 0;bottom: 0;margin:auto;
+  transition: all 0.5s;
+  z-index: 5;  
+}
+
+@mixin border($colour){
+  border: 2px solid $colour;    
+}
+
+@mixin span { 
+  transition: all 0.4s;
+  position: relative;
+  z-index: 10;
+}
