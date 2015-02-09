@@ -1,0 +1,152 @@
+body{
+  text-align:center;
+  font-family: 'Cutive Mono',sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-top: 100px;    
+}
+
+.second-icons div.button{
+ font-size: 3rem;
+ margin-top: 3rem;    
+}
+
+
+/* COMMON */
+/* ------ */
+
+div.button{
+  padding:13px 23px;
+  @include border($light-bleu); 
+  background-color: #EE3769;
+  color: #fff;
+  display:inline-block;
+  font-size: 14px;
+  position: relative;
+  overflow:hidden;
+}
+
+.first-icons .button{
+ background-color:$bleu;
+ @include border($bleu);  
+}
+
+.second-icons .button:first-child{
+ background-color:$yellow;
+ @include border($yellow);
+}
+
+.second-icons .button:nth-child(2){
+ background-color:$light-bleu;
+ @include border($light-bleu);  
+}
+
+.second-icons .button:nth-child(3){
+ background-color:$orange;
+ @include border($orange);  
+}
+
+
+/* LINE */
+/* ---- */
+
+div.button.line span.animator{
+  width: 300px;
+  height: 100%;
+  position:absolute;
+  background-color: #fff;
+  top:0;
+  left:-10px;
+  transition: all 0.5s;
+  transform: skewX(-20deg);
+  z-index: 5;
+}
+
+div.button.line span.content{
+@include span;
+}
+
+div.button.line span.animator{
+  transform:translateX(-310px) skewX(-20deg);
+}
+
+div.button.line:hover{ cursor:pointer; }
+
+div.button.line:hover span.animator{
+  transform:translateX(0) skewX(-10deg);
+}
+
+div.button.line:hover span.content{
+  color:$light-bleu;
+}
+
+div.button.line:hover span.content2{
+  color:$yellow;
+}
+
+/* ROUND */
+/* ----- */
+
+
+div.button.round span.animator{
+  @include round;
+}
+
+div.button.round span.content{
+  @include span;
+}
+
+div.button.round span.animator{
+  opacity: 1;
+  transform: scale(0);
+}
+
+div.button.round:hover{ cursor:pointer; }
+
+div.button.round:hover span.animator{
+  opacity: 1;
+  transform:scale(50);
+}
+
+div.button.round:hover span.content{
+  color:$light-bleu;
+}
+
+div.button.round:hover span.content3{
+  color:$orange;
+}
+
+/* ROUND 2 */
+/* ------- */
+
+div.button.round2 span.animator{
+  transition-delay:0.1s;
+}
+
+div.button.round2 span.animator2{
+    @include round;
+      opacity: 0; 
+}
+
+div.button.round2:hover span.animator2{
+  opacity: 0.5;
+  transform:scale(50);
+}
+
+footer{
+ background-color: $grey;
+ color: #fff;
+ font-size: 0.70rem;
+ margin-top: 20rem;
+ padding-top: 7rem;    
+ padding-bottom: 1rem;    
+}
+
+
+
+
+
+
+
