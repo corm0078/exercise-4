@@ -10,7 +10,13 @@
 }
 
 @mixin border($colour){
-  border: 2px solid $colour;    
+  border: 3px solid $colour;   
+}
+
+@mixin round-border{
+ border-radius: 50%;
+ padding-right: 1rem;
+ padding-left: 1rem;    
 }
 
 @mixin span { 

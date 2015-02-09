@@ -18,7 +18,7 @@ body{
 /* ------ */
 
 div.button{
-  padding:13px 23px;
+  padding:13px 13px;
   @include border($light-bleu); 
   background-color: #EE3769;
   color: #fff;
@@ -36,16 +36,19 @@ div.button{
 .second-icons .button:first-child{
  background-color:$yellow;
  @include border($yellow);
+ @include round-border;    
 }
 
 .second-icons .button:nth-child(2){
  background-color:$light-bleu;
- @include border($light-bleu);  
+ @include border($light-bleu);
+ @include round-border;    
 }
 
 .second-icons .button:nth-child(3){
  background-color:$orange;
- @include border($orange);  
+ @include border($orange);
+ @include round-border;    
 }
 
 
@@ -65,11 +68,11 @@ div.button.line span.animator{
 }
 
 div.button.line span.content{
-@include span;
+@include span;   
 }
 
 div.button.line span.animator{
-  transform:translateX(-310px) skewX(-20deg);
+  transform:translateX(-310px) skewX(-10deg);
 }
 
 div.button.line:hover{ cursor:pointer; }
@@ -83,7 +86,7 @@ div.button.line:hover span.content{
 }
 
 div.button.line:hover span.content2{
-  color:$yellow;
+  color:$yellow;   
 }
 
 /* ROUND */
@@ -116,6 +119,7 @@ div.button.round:hover span.content{
 
 div.button.round:hover span.content3{
   color:$orange;
+    
 }
 
 /* ROUND 2 */
